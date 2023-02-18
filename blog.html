@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailewind CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        btnBg: '#1090D8',
+                        blogBg: 'rgba(16, 144, 216, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- font Awesome Link-->
+    <script src="https://kit.fontawesome.com/e75298b615.js" crossorigin="anonymous"></script>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body class="m-2 md:m-12">
+    <main>
+        <!-- Interactive Geometry Genius -->
+        <section class="md:flex justify-between items-center bg-blogBg rounded-lg px-10 py-5">
+            <div>
+                <h3 class="text-2xl"><span class="text-4xl font-bold">JavaScript </span>
+                    <br>
+                    Question Solution
+                </h3>
+            </div>
+            <div>
+                <button id="home"
+                    class="py-3 px-10 bg-btnBg text-xl font-bold text-white rounded-lg mt-3 md:m-0">Home Page</button>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div>
+                <h3 class="text-2xl font-bold pt-5">1. What is DOM and what is the purpose of DOM?</h3>
+                <p>Answer: DOM (Document Object Model) is an API for HTML. It represents the logical strucutre of a document and
+                    how a document can be accessed, read, and manipulated. Basically, all the interactive work of the website is done with DOM.</p>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold pt-5">2. How will you select HTML elements using DOM? Name the DOM
+                    methods.?
+                </h3>
+                <p class="italic font-bold pt-3">Answer: I can select elements in a DOM using 5 selectors.</p>
+                <ul class="ml-3">
+                    <li class="text-red-500 font-semibold">1. document.getElementsByTagName()</li>
+                    <li class="text-red-500 font-semibold">2. document.getElementsByClassName()</li>
+                    <li class="text-red-500 font-semibold">3. document.getElementById()</li>
+                    <li class="text-red-500 font-semibold">4. document.querySelector()</li>
+                    <li class="text-red-500 font-semibold">5. document.querySelectorAll()</li>
+                </ul>
+
+                <p class="pt-5"><span class="underline  font-bold">1. getElementsByTagName(<small>HTML tag
+                            name/ h1/ p</small>):</span>The HTML tag name is first selected with the selector, then a variable
+                            is placed, that variable returns a HTML collection. 
+                </p>
+
+                <p class="pt-5"><span class="underline font-bold">2. getElementsByClassName(<small>HTML class
+                            name / .class</small>):</span> First i have to declare the class in the HTML tag and then i have to select the class with getElementsByClass(). then a variable
+                            is placed, that variable returns a HTML collection too.
+                </p>
+                <p class="pt-5"><span class="underline  font-bold">3. document.getElementById(<small>HTML ID nam / #id</small>):</span> This selector is the most used. It can be said that 50 percent of DOM selectors are used with it. With this you select a specific ID, which is declared ID in the HTML tag.
+                </p>
+                <p class="pt-5"><span class="underline  font-bold">4. document.querySelector():</span> When you select by HTML id or class it shows you its first element.
+                </p>
+                <p class="pt-5"><span class="underline  font-bold">5. document.querySelectorAll():</span> Give you a node list of match. then you can modify as your wish.  <span class="italic">[you can use array to access content of the list.]</span> 
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold pt-5">3. What is event bubble?
+                </h3>
+                <p>Answer: An event bubble is a process in the DOM, which acts like a tree <br>
+                    When an event is triggered on a specific element, such as a mouse click or keyboard press, the event first handles itself and then works its way up to its parent, performing a task until it reaches the top-level element in the sequence.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold pt-5">4. What is a callback function and why will you use it?
+                </h3>
+                <p>Answer: Callback functions are very popular in JavaScript because it is an asynchronous language. This means, this function doesn't wait for another function or anything else to execute. </p>
+                <br>
+                <p>why will i use it: Suppose I download a file from the Internet, until it is downloaded, I want to do other work, it is not possible. So that's why the callback function is designed, for downloading, I can do my other tasks, it doesn't have to freeze.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script Js Link -->
+    <script src="script/blog.js"></script>
+</body>
+
+</html>
